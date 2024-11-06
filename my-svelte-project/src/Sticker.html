@@ -1,0 +1,12 @@
+<script lang="ts">
+  import Sticker from './Sticker.svelte';
+  import type { DokiTheme } from './Types';
+
+  // Пример объекта `dokiTheme`
+  const dokiTheme: DokiTheme = {
+    information: { name: "Example Theme" },
+    stickers: { default: { path: "path/to/sticker.png" } }
+  };
+</script>
+
+<Sticker {dokiTheme} />
